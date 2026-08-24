@@ -11,6 +11,27 @@
 
   <name>RustJVM Maven Plugin</name>
   <description>Run, build, test, and package RustJVM applications from Maven.</description>
+  <url>https://github.com/rustjvm/rustjvm</url>
+
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>RustJVM Team</name>
+      <email>team@rustjvm.dev</email>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/rustjvm/rustjvm.git</connection>
+    <developerConnection>scm:git:ssh://github.com/rustjvm/rustjvm.git</developerConnection>
+    <url>https://github.com/rustjvm/rustjvm</url>
+  </scm>
 
   <properties>
     <maven.compiler.release>21</maven.compiler.release>
@@ -50,6 +71,86 @@
         <artifactId>maven-plugin-plugin</artifactId>
         <version>3.13.1</version>
       </plugin>
+
+      <!-- Source JAR for IDE support -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.3.0</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Javadoc JAR for IDE support -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.6.0</version>
+        <configuration>
+          <additionalJOptions>
+            <additionalJOption>-Xdoclint:none</additionalJOption>
+          </additionalJOptions>
+        </configuration>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
+
+  <!-- Signing and Central staging only activate with -Prelease, so a plain
+       `mvn clean package` works for every contributor without a GPG key. -->
+  <profiles>
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
+            <version>0.4.0</version>
+            <extensions>true</extensions>
+            <configuration>
+              <publishingServerId>central</publishingServerId>
+              <tokenAuth>true</tokenAuth>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+  <distributionManagement>
+    <repository>
+      <id>central</id>
+      <name>Maven Central</name>
+      <url>https://central.sonatype.com/api/v1/publisher/deployments/upload/</url>
+    </repository>
+  </distributionManagement>
 </project>

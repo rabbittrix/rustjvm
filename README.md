@@ -50,14 +50,22 @@ RustJVM has two parts:
 ### Quick Install (Recommended)
 
 ```bash
-# 1. Install the Rust runtime (one-time)
-curl -fsSL https://rustjvm.dev/install.sh | bash
-
-# Windows PowerShell:
-#   irm https://rustjvm.dev/install.ps1 | iex
+# 1. Install the Rust runtime from a source checkout (one-time)
+git clone https://github.com/rustjvm/rustjvm.git
+cd rustjvm
+cargo install --path rustjvm-cli          # or: scripts/install.sh --from-source
+                                          #     powershell -File scripts\install.ps1 -FromSource
 
 # 2. Add the JAR to your project (see Maven/Gradle below)
 ```
+
+> **Coming with the first `v0.1.0-alpha` release** — one-line installers that
+> download a prebuilt binary, no Rust toolchain needed:
+>
+> ```bash
+> curl -fsSL https://rustjvm.dev/install.sh | bash    # Linux / macOS
+> irm https://rustjvm.dev/install.ps1 | iex           # Windows PowerShell
+> ```
 
 ### Maven
 
@@ -107,32 +115,32 @@ javac -cp rustjvm-spring-api-0.1.0-alpha.jar MyApp.java
 
 The JAR provides annotations and APIs, but you need the Rust runtime to execute.
 
-**Option A: Cargo (recommended for developers)**
-
-```bash
-cargo install rustjvm-cli     # after crates.io publish
-cargo install --path rustjvm-cli   # from a source checkout, today
-rustjvm --version
-```
-
-**Option B: One-line installer**
-
-```bash
-# Linux / macOS
-curl -fsSL https://rustjvm.dev/install.sh | bash
-
-# Windows PowerShell
-irm https://rustjvm.dev/install.ps1 | iex
-```
-
-The installers fetch the prebuilt binary from GitHub Releases (published with the first `v*` tag) and add `~/.rustjvm/bin` to your `PATH`.
-
-**Option C: Build from source**
+**Option A: Build from source** (works today)
 
 ```bash
 git clone https://github.com/rustjvm/rustjvm.git
 cd rustjvm
 cargo install --path rustjvm-cli
+```
+
+Or let the install scripts do the same build and put the binary on your `PATH`:
+
+```bash
+scripts/install.sh --from-source                    # Linux / macOS
+powershell -File scripts\install.ps1 -FromSource    # Windows
+```
+
+**Option B: Cargo from crates.io** (once `rustjvm-cli` is published)
+
+```bash
+cargo install rustjvm-cli
+```
+
+**Option C: Prebuilt binary installer** (once the first `v*` tag publishes GitHub Releases)
+
+```bash
+curl -fsSL https://rustjvm.dev/install.sh | bash    # Linux / macOS
+irm https://rustjvm.dev/install.ps1 | iex           # Windows PowerShell
 ```
 
 Verify:

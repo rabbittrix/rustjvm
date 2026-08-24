@@ -101,7 +101,7 @@ public final class RustJVMBootstrap {
         throw new IllegalStateException(
             "RustJVM runtime not found.\n"
                 + "Install it with: cargo install rustjvm-cli\n"
-                + "or run:        curl -fsSL https://rustjvm.dev/install.sh | bash\n"
+                + "from a checkout: cargo install --path rustjvm-cli\n"
                 + "or set the RUSTJVM_HOME environment variable.");
     }
 
