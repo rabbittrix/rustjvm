@@ -4,13 +4,13 @@ plugins {
     `maven-publish`
 }
 
-group = "io.rustjvm"
+group = "io.github.rabbittrix"
 version = "0.1.0-alpha"
 
 gradlePlugin {
     plugins {
         register("rustjvm") {
-            id = "io.rustjvm"
+            id = "io.github.rabbittrix"
             implementationClass = "io.rustjvm.gradle.RustJVMPlugin"
         }
     }

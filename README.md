@@ -73,7 +73,7 @@ Add the dependency to your `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>io.rustjvm</groupId>
+    <groupId>io.github.rabbittrix</groupId>
     <artifactId>rustjvm-spring-api</artifactId>
     <version>0.1.0-alpha</version>
 </dependency>
@@ -85,7 +85,7 @@ Add to your `build.gradle` or `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("io.rustjvm:rustjvm-spring-api:0.1.0-alpha")
+    implementation("io.github.rabbittrix:rustjvm-spring-api:0.1.0-alpha")
 }
 ```
 
@@ -606,7 +606,7 @@ Key benchmarks tracked as gates:
 │    (Your code: @RestController, @Service, @Autowired)       │
 │                                                             │
 │  Compile-time dependency:                                   │
-│  io.rustjvm:rustjvm-spring-api:0.1.0-alpha (JAR)            │
+│  io.github.rabbittrix:rustjvm-spring-api:0.1.0-alpha (JAR)  │
 └──────────────────────────┬──────────────────────────────────┘
                            │ zero-copy FFI
 ┌──────────────────────────▼──────────────────────────────────┐

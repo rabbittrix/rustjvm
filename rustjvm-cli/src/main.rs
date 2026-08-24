@@ -525,7 +525,7 @@ level = "info"
     <dependencies>
         <!-- Compile-time only: the Rust runtime provides the implementations. -->
         <dependency>
-            <groupId>io.rustjvm</groupId>
+            <groupId>io.github.rabbittrix</groupId>
             <artifactId>rustjvm-spring-api</artifactId>
             <version>0.1.0-alpha</version>
         </dependency>
