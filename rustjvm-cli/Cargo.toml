@@ -1,0 +1,27 @@
+[package]
+name = "rustjvm-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "rustjvm: project scaffolding, runtimes and management"
+
+[[bin]]
+name = "rustjvm"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0.104"
+clap = { version = "4.6.6", features = ["derive"] }
+rustjvm-compiler = { version = "0.1.0", path = "../rustjvm-compiler" }
+rustjvm-docs = { version = "0.1.0", path = "../rustjvm-docs" }
+rustjvm-hotreload = { version = "0.1.0", path = "../rustjvm-hotreload" }
+rustjvm-k8s = { version = "0.1.0", path = "../rustjvm-k8s" }
+rustjvm-migrate = { version = "0.1.0", path = "../rustjvm-migrate" }
+rustjvm-runtime = { version = "0.1.0", path = "../rustjvm-runtime" }
+serde_json = { version = "1", features = ["preserve_order"] }
+tokio = { version = "1.53.1", features = ["rt-multi-thread", "macros"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+
+[dev-dependencies]
+tempfile = "3"

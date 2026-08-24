@@ -1,0 +1,20 @@
+[workspace]
+resolver = "2"
+members = [
+    "rustjvm-runtime",
+    "rustjvm-compiler",
+    "rustjvm-hotreload",
+    "rustjvm-cli",
+    "rustjvm-ai",
+    "rustjvm-ml",
+    "rustjvm-fix",
+    "rustjvm-ide-plugin",
+    "rustjvm-migrate",
+    "rustjvm-k8s",
+    "rustjvm-docs",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"

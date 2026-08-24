@@ -1,0 +1,13 @@
+[package]
+name = "rustjvm-docs"
+description = "Documentation generator: OpenAPI specs and bean dependency graphs from RustJVM sources"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+rustjvm-compiler = { path = "../rustjvm-compiler" }
+serde_json = { version = "1", features = ["preserve_order"] }

@@ -1,0 +1,8 @@
+[package]
+name = "rustjvm-ide-plugin"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Rust backend for the RustJVM Cursor/VSCode integration (Phase 3+)"
+
+[dependencies]

@@ -1,0 +1,15 @@
+[package]
+name = "rustjvm-migrate"
+description = "Spring Boot to RustJVM migration analyzer and converter"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+
+[dev-dependencies]
+tempfile = "3"
+rustjvm-compiler = { path = "../rustjvm-compiler" }

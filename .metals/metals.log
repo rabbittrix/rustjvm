@@ -1,0 +1,90 @@
+2026.08.24 19:11:39 INFO  Started: Metals version 1.6.8 in folders 'G:\RusJava' for client Cursor 1.128.0.
+2026.08.24 19:11:39 INFO  Memory monitor started
+2026.08.24 19:11:40 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.08.24 19:11:41 WARN  no build tool detected in workspace 'G:\RusJava'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2026.08.24 19:11:41 WARN  Build server is not auto-connectable.
+2026.08.24 19:11:41 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Autowired.java
+2026.08.24 19:11:41 WARN  no build target for: G:\RusJava\examples\hello-app\src\main\java\com\example\hello\HelloController.java
+2026.08.24 19:11:41 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\web\RestController.java
+2026.08.24 19:11:41 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\web\RequestParam.java
+2026.08.24 19:11:41 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\ai\Prompt.java
+2026.08.24 19:11:41 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\RustJVMApplication.java
+2026.08.24 19:11:41 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\web\GetMapping.java
+2026.08.24 19:11:41 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\web\RequestMapping.java
+2026.08.24 19:11:41 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\web\PostMapping.java
+2026.08.24 19:14:12 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\web\RestController.java. Using fallback presentation compiler.
+2026.08.24 19:14:29 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\web\GetMapping.java. Using fallback presentation compiler.
+2026.08.24 19:14:29 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\web\PostMapping.java. Using fallback presentation compiler.
+2026.08.24 19:14:29 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\web\RequestMapping.java. Using fallback presentation compiler.
+2026.08.24 19:14:29 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\web\RequestParam.java. Using fallback presentation compiler.
+2026.08.24 19:14:31 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Autowired.java. Using fallback presentation compiler.
+2026.08.24 19:14:33 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\RustJVMApplication.java. Using fallback presentation compiler.
+2026.08.24 19:14:36 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\ai\Prompt.java. Using fallback presentation compiler.
+2026.08.24 19:14:39 INFO  no build target found for G:\RusJava\examples\hello-app\src\main\java\com\example\hello\HelloController.java. Using fallback presentation compiler.
+2026.08.24 19:15:04 WARN  no build target for: G:\RusJava\examples\hello-app\src\main\java\com\example\hello\HelloController.java
+2026.08.24 19:15:28 INFO  no build target found for G:\RusJava\examples\hello-app\src\main\java\com\example\hello\HelloController.java. Using fallback presentation compiler.
+2026.08.24 19:15:47 INFO  no build target found for G:\RusJava\examples\hello-app\src\main\java\com\example\hello\HelloController.java. Using fallback presentation compiler.
+2026.08.24 19:18:04 INFO  no build target found for G:\RusJava\examples\hello-app\src\main\java\com\example\hello\HelloController.java. Using fallback presentation compiler.
+2026.08.24 19:33:23 WARN  no build target for: G:\RusJava\examples\di-app\src\main\java\com\example\di\GreetingService.java
+2026.08.24 19:33:24 WARN  no build target for: G:\RusJava\examples\di-app\src\main\java\com\example\di\HelloController.java
+2026.08.24 19:33:26 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Service.java
+2026.08.24 19:33:27 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Configuration.java
+2026.08.24 19:33:27 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Component.java
+2026.08.24 19:36:23 INFO  no build target found for G:\RusJava\examples\di-app\src\main\java\com\example\di\GreetingService.java. Using fallback presentation compiler.
+2026.08.24 19:36:24 INFO  no build target found for G:\RusJava\examples\di-app\src\main\java\com\example\di\HelloController.java. Using fallback presentation compiler.
+2026.08.24 19:36:26 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Service.java. Using fallback presentation compiler.
+2026.08.24 19:36:27 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Configuration.java. Using fallback presentation compiler.
+2026.08.24 19:36:27 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Component.java. Using fallback presentation compiler.
+2026.08.24 19:37:33 WARN  no build target for: G:\RusJava\examples\di-app\src\main\java\com\example\di\GreetingService.java
+2026.08.24 19:38:43 INFO  no build target found for G:\RusJava\examples\di-app\src\main\java\com\example\di\GreetingService.java. Using fallback presentation compiler.
+2026.08.24 19:38:58 INFO  no build target found for G:\RusJava\examples\di-app\src\main\java\com\example\di\GreetingService.java. Using fallback presentation compiler.
+2026.08.24 19:40:33 INFO  no build target found for G:\RusJava\examples\di-app\src\main\java\com\example\di\GreetingService.java. Using fallback presentation compiler.
+2026.08.24 20:20:56 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Scope.java
+2026.08.24 20:20:57 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Bean.java
+2026.08.24 20:20:58 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\ComponentScan.java
+2026.08.24 20:20:58 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\RustJVMApplication.java
+2026.08.24 20:21:03 WARN  no build target for: G:\RusJava\examples\di-app\src\main\java\com\example\di\DiApplication.java
+2026.08.24 20:21:04 WARN  no build target for: G:\RusJava\examples\di-app\src\main\java\com\example\di\PrefixService.java
+2026.08.24 20:21:05 WARN  no build target for: G:\RusJava\examples\di-app\src\main\java\com\example\di\GreetingService.java
+2026.08.24 20:21:05 WARN  no build target for: G:\RusJava\examples\di-app\src\main\java\com\example\di\AppConfig.java
+2026.08.24 20:23:56 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Scope.java. Using fallback presentation compiler.
+2026.08.24 20:23:57 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\Bean.java. Using fallback presentation compiler.
+2026.08.24 20:23:58 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\context\ComponentScan.java. Using fallback presentation compiler.
+2026.08.24 20:23:58 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\spring\RustJVMApplication.java. Using fallback presentation compiler.
+2026.08.24 20:24:03 INFO  no build target found for G:\RusJava\examples\di-app\src\main\java\com\example\di\DiApplication.java. Using fallback presentation compiler.
+2026.08.24 20:24:03 INFO  no build target found for G:\RusJava\examples\di-app\src\main\java\com\example\di\PrefixService.java. Using fallback presentation compiler.
+2026.08.24 20:24:05 INFO  no build target found for G:\RusJava\examples\di-app\src\main\java\com\example\di\GreetingService.java. Using fallback presentation compiler.
+2026.08.24 20:24:05 INFO  no build target found for G:\RusJava\examples\di-app\src\main\java\com\example\di\AppConfig.java. Using fallback presentation compiler.
+2026.08.24 20:33:23 WARN  no build target for: G:\RusJava\examples\di-app\src\main\java\com\example\di\PrefixService.java
+2026.08.24 20:33:37 INFO  no build target found for G:\RusJava\examples\di-app\src\main\java\com\example\di\PrefixService.java. Using fallback presentation compiler.
+2026.08.24 20:36:23 INFO  no build target found for G:\RusJava\examples\di-app\src\main\java\com\example\di\PrefixService.java. Using fallback presentation compiler.
+2026.08.24 20:56:49 WARN  no build target for: G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\AbstractRustJVMMojo.java
+2026.08.24 20:56:53 WARN  no build target for: G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\RustJVMRunMojo.java
+2026.08.24 20:56:58 WARN  no build target for: G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\RustJVMBuildMojo.java
+2026.08.24 20:57:09 WARN  no build target for: G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\RustJVMPackageMojo.java
+2026.08.24 20:57:14 WARN  no build target for: G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\RustJVMTestMojo.java
+2026.08.24 20:57:35 WARN  no build target for: G:\RusJava\rustjvm-maven-plugin\src\test\java\io\rustjvm\maven\RustJVMPluginTest.java
+2026.08.24 20:59:49 INFO  no build target found for G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\AbstractRustJVMMojo.java. Using fallback presentation compiler.
+2026.08.24 20:59:53 INFO  no build target found for G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\RustJVMRunMojo.java. Using fallback presentation compiler.
+2026.08.24 20:59:58 INFO  no build target found for G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\RustJVMBuildMojo.java. Using fallback presentation compiler.
+2026.08.24 21:00:09 INFO  no build target found for G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\RustJVMPackageMojo.java. Using fallback presentation compiler.
+2026.08.24 21:00:14 INFO  no build target found for G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\RustJVMTestMojo.java. Using fallback presentation compiler.
+2026.08.24 21:00:35 INFO  no build target found for G:\RusJava\rustjvm-maven-plugin\src\test\java\io\rustjvm\maven\RustJVMPluginTest.java. Using fallback presentation compiler.
+2026.08.24 21:01:39 WARN  no build target for: G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\AbstractRustJVMMojo.java
+2026.08.24 21:01:43 WARN  no build target for: G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\RustJVMPackageMojo.java
+2026.08.24 21:02:12 WARN  no build target for: G:\RusJava\rustjvm-maven-plugin\src\test\java\io\rustjvm\maven\RustJVMPluginTest.java
+2026.08.24 21:02:44 WARN  no build target for: G:\RusJava\examples\spring-petstore-lite\src\main\java\com\example\petstore\PetstoreApplication.java
+2026.08.24 21:02:44 INFO  no build target found for G:\RusJava\examples\spring-petstore-lite\src\main\java\com\example\petstore\PetstoreApplication.java. Using fallback presentation compiler.
+2026.08.24 21:02:44 WARN  no build target for: G:\RusJava\examples\spring-petstore-lite\src\main\java\com\example\petstore\PetService.java
+2026.08.24 21:02:44 WARN  no build target for: G:\RusJava\examples\spring-petstore-lite\src\main\java\com\example\petstore\PetstoreApplication.java
+2026.08.24 21:02:47 WARN  no build target for: G:\RusJava\examples\spring-petstore-lite\src\main\java\com\example\petstore\PetController.java
+2026.08.24 21:04:39 INFO  no build target found for G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\AbstractRustJVMMojo.java. Using fallback presentation compiler.
+2026.08.24 21:04:43 INFO  no build target found for G:\RusJava\rustjvm-maven-plugin\src\main\java\io\rustjvm\maven\RustJVMPackageMojo.java. Using fallback presentation compiler.
+2026.08.24 21:05:12 INFO  no build target found for G:\RusJava\rustjvm-maven-plugin\src\test\java\io\rustjvm\maven\RustJVMPluginTest.java. Using fallback presentation compiler.
+2026.08.24 21:05:44 INFO  no build target found for G:\RusJava\examples\spring-petstore-lite\src\main\java\com\example\petstore\PetService.java. Using fallback presentation compiler.
+2026.08.24 21:05:44 INFO  no build target found for G:\RusJava\examples\spring-petstore-lite\src\main\java\com\example\petstore\PetstoreApplication.java. Using fallback presentation compiler.
+2026.08.24 21:05:47 INFO  no build target found for G:\RusJava\examples\spring-petstore-lite\src\main\java\com\example\petstore\PetController.java. Using fallback presentation compiler.
+2026.08.24 21:12:44 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\RustJVMBootstrap.java
+2026.08.24 21:14:33 WARN  no build target for: G:\RusJava\rustjvm-spring-api\src\test\java\rustjvm\RustJVMBootstrapTest.java
+2026.08.24 21:15:44 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\main\java\rustjvm\RustJVMBootstrap.java. Using fallback presentation compiler.
+2026.08.24 21:17:33 INFO  no build target found for G:\RusJava\rustjvm-spring-api\src\test\java\rustjvm\RustJVMBootstrapTest.java. Using fallback presentation compiler.

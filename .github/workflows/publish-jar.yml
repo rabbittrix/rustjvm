@@ -1,0 +1,47 @@
+name: Publish JAR to Maven Central
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Cache Maven dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+
+      - name: Run tests
+        run: mvn -f rustjvm-spring-api/pom.xml clean verify --batch-mode
+
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+
+      - name: Publish to Maven Central
+        # The release profile activates GPG signing + the Central
+        # publishing plugin; plain `mvn package` stays key-free.
+        run: |
+          cd rustjvm-spring-api
+          mvn deploy \
+            -Prelease \
+            -DskipTests \
+            -Dgpg.passphrase="${{ secrets.GPG_PASSPHRASE }}" \
+            --batch-mode
+        env:
+          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+          MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}

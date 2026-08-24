@@ -1,0 +1,24 @@
+[package]
+name = "rustjvm-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "RustJVM core runtime: tokio + axum HTTP, per-request arenas, atomic dispatch"
+
+[[bench]]
+name = "runtime"
+harness = false
+
+[dependencies]
+arc-swap = "1.9.2"
+axum = "0.8.9"
+bumpalo = "3.20.3"
+rustjvm-compiler = { version = "0.1.0", path = "../rustjvm-compiler" }
+serde = "1.0.229"
+serde_json = "1.0.151"
+thiserror = "2.0.20"
+tokio = { version = "1.53.1", features = ["full"] }
+tracing = "0.1.44"
+
+[dev-dependencies]
+criterion = "0.8.2"
