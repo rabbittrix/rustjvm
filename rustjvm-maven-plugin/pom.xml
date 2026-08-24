@@ -22,8 +22,8 @@
 
   <developers>
     <developer>
-      <name>RustJVM Team</name>
-      <email>team@rustjvm.dev</email>
+      <name>Roberto de Souza</name>
+      <email>rabbittrix@hotmail.com</email>
     </developer>
   </developers>
 
@@ -134,7 +134,7 @@
           <plugin>
             <groupId>org.sonatype.central</groupId>
             <artifactId>central-publishing-maven-plugin</artifactId>
-            <version>0.4.0</version>
+            <version>0.11.0</version>
             <extensions>true</extensions>
             <configuration>
               <publishingServerId>central</publishingServerId>
